@@ -21,34 +21,34 @@
   }
 @font-face {
     font-family: 'Shentox Bold';
-    src: url('/fonts/Shentox Bold.ttf');
+    src: url('./fonts/Shentox Bold.ttf');
 }
 
 @font-face {
     font-family: 'bank-gothic-medium-bt';
-    src: url('/fonts/bank-gothic-medium-bt.ttf');
+    src: url('./fonts/bank-gothic-medium-bt.ttf');
 }
 
 @font-face {
     font-family: 'Rogan';
-    src: url('fonts/Rogan-Light.ttf'),
-    url('fonts/Rogan-ExtraLightItalic.ttf'),
-    url('fonts/Rogan-Light.ttf'),
-    url('fonts/Rogan-Medium.ttf'),
-    url('fonts/Rogan-Regular.ttf'),
-    url('fonts/Rogan-SemiBold.ttf'),
-    url('fonts/Rogan-Thin.ttf'),
-    url('fonts/Rogan-Bold.ttf');
+    src: url('./fonts/Rogan-Light.ttf'),
+    url('./fonts/Rogan-ExtraLightItalic.ttf'),
+    url('./fonts/Rogan-Light.ttf'),
+    url('./fonts/Rogan-Medium.ttf'),
+    url('./fonts/Rogan-Regular.ttf'),
+    url('./fonts/Rogan-SemiBold.ttf'),
+    url('./fonts/Rogan-Thin.ttf'),
+    url('./fonts/Rogan-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Rogan-Bold';
-    src:url('fonts/Rogan-Bold.ttf');
+    src:url('.fonts/Rogan-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Rogan-SemiBold';
-    src:url('fonts/Rogan-SemiBold.ttf');
+    src:url('./fonts/Rogan-SemiBold.ttf');
 }
 
 *{
