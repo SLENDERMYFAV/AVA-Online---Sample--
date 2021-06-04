@@ -500,3 +500,56 @@ svg {
     height: 65px;
     vertical-align: top;
 }
+
+.Eden {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/4aLtrYyDO4rpaFhV3qeWbp/87f5240c36d5a10fea0f64cc67d89b79/www-cta.jpg?w=1700&q=75&fm=webp);
+}
+
+.MultiEden {
+    background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-new.jpg);
+    width: 45%;
+    background-size: cover;
+    margin: 5%;
+    padding: 5%;
+}
+
+.MultiEden img{
+    width: 65%;
+    top: 10%;
+    left: -1%;
+    z-index: 99999;
+    flex: 50%;
+    position: absolute;
+}
+
+.MultiEden img:hover{
+    transform: translate3d(15%,50px,0);
+    transition: transform .8s ease-in-out;
+}
+
+.AUEden {
+    background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-returning.jpg);
+    width: 45%;
+    background-size: cover;
+    margin: 5%;
+    flex: 50%;
+    padding: 5%;
+}
+
+.AUEden img{
+    width: 43%;
+    top: 10%;
+    right: -1%;
+    z-index: 99999;
+    position: absolute;
+}
+
+.AUEden img:hover{
+    transform: translate3d(-15%,-50px,0);
+    transition: transform .8s ease-in-out;
+}
