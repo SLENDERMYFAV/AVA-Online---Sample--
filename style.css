@@ -504,25 +504,41 @@ svg {
 .Eden {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: black;
+    background-position: center;
     display: flex;
     background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/4aLtrYyDO4rpaFhV3qeWbp/87f5240c36d5a10fea0f64cc67d89b79/www-cta.jpg?w=1700&q=75&fm=webp);
 }
 
+.EdenTitle {
+    position: absolute;
+    left: 10%;
+    margin: 5px;
+}
+
+.EdenTitle h1 {
+    color: white;
+    font-size: 36px;
+    font-family: 'Shentox Bold',sans-serif;
+    font-weight: 150;
+    margin-bottom: 50px;
+}
+
 .MultiEden {
     background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-new.jpg);
-    width: 45%;
+    background-position: center;
+    width: 50%;
     background-size: cover;
-    margin: 5%;
-    padding: 5%;
+    margin: 10% 2% 4% 5%;
+    padding: 3%;
 }
 
 .MultiEden img{
     width: 65%;
-    top: 10%;
+    top: 18%;
     left: -1%;
-    z-index: 99999;
+    z-index: 80;
     flex: 50%;
     position: absolute;
 }
@@ -532,20 +548,50 @@ svg {
     transition: transform .8s ease-in-out;
 }
 
+.MultiEden .Players{
+    vertical-align: bottom;
+    position: relative;
+    top: 70%;
+} 
+
+.MultiEden .Players h2{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.MultiEden .Players p{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.MultiEden .Players a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+}
+
 .AUEden {
     background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-returning.jpg);
     width: 45%;
     background-size: cover;
-    margin: 5%;
+    margin: 10% 5% 4% 2%;
     flex: 50%;
     padding: 5%;
 }
 
 .AUEden img{
     width: 43%;
-    top: 10%;
+    top: 18%;
     right: -1%;
-    z-index: 99999;
+    z-index: 80;
     position: absolute;
 }
 
@@ -553,3 +599,50 @@ svg {
     transform: translate3d(-15%,-50px,0);
     transition: transform .8s ease-in-out;
 }
+
+.AUEden .Players{
+    vertical-align: bottom;
+    position: absolute;
+    width: 440px;
+    top: 65%;
+    z-index: 81;
+    margin-left: -24px;
+} 
+
+.AUEden .Players h2{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.AUEden .Players p{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.AUEden .Players a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+}
+
+#iconSpacing2 {
+    width: 75px;
+    margin-left: 5px;
+    margin-right: -5px;
+    font-size: 1.5em;
+}
+
+i {
+    margin-right: 15px;
+    color: rgba(255, 217, 0, 0.63);
+    
+ }
+ 
