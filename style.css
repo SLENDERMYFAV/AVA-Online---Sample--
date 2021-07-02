@@ -736,3 +736,109 @@ i {
     letter-spacing: 1px;
     margin-top: 80%;
 }
+
+.Founder {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/2TmyCKzdfVT7ybPsCQDfPm/1c6ddb59130df3b25b9872a0dc8d7f94/featured-content-bg.jpg?fm=webp);
+}
+
+.Founder .Quantum {
+   background-image:url(https://images.ctfassets.net/7lhcm73ukv5p/2oLnu8yYDN0Gbbz80AvWIv/80f328e50d862c61aed550611f777bfd/EVE_News_EN_FR_DE_RU_KO_JA_1920x1080.jpg?w=900&q=75&fm=webp);
+   height: 40%;
+   width: 55%;
+   margin: 10%;
+   background-size: cover;
+}
+
+.Founder .Colen {
+    position: relative;
+    line-height: 1.5;
+    right: 5%;
+    height: 40%;
+    width: 40%;
+    margin: 0%;
+    margin-top: 10%;
+}
+
+.Founder .Colen h2{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.Founder .Colen p{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.Founder .Colen a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+}
+
+#TopCrown {
+    width: 100%;
+    display: flex;
+}
+
+#TopCrown div {
+    flex: 1;
+}
+
+.Founder .CCTV {
+    flex: 1;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/6J9B7iS6ldPCtCksN52IVW/b4be88f2e116baff8fe52f041977202c/ccptv-eve-online-streams-twitch.jpg?);
+    height: 40%;
+    width: 55%;
+    margin: 10%;
+    background-size: cover;
+}
+
+.Founder .Twitcher {
+    flex: 2;
+    line-height: 1.5;
+    right: 5%;
+    height: 40%;
+    width: 40%;
+    margin: 0%;
+    margin-top: 60%;
+}
+
+.Founder .Twitcher h2{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.Founder .Twitcher p{
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.Founder .Twitcher a{
+    padding-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+}
