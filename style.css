@@ -740,7 +740,8 @@ i {
 .Founder {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 200vh;
+    padding-bottom: 10%;
     background-color: black;
     background-position: center;
     display: flex;
@@ -749,32 +750,34 @@ i {
     background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/2TmyCKzdfVT7ybPsCQDfPm/1c6ddb59130df3b25b9872a0dc8d7f94/featured-content-bg.jpg?fm=webp);
 }
 
-.Founder .Quantum {
-   background-image:url(https://images.ctfassets.net/7lhcm73ukv5p/2oLnu8yYDN0Gbbz80AvWIv/80f328e50d862c61aed550611f777bfd/EVE_News_EN_FR_DE_RU_KO_JA_1920x1080.jpg?w=900&q=75&fm=webp);
-   height: 40%;
-   width: 55%;
-   margin: 10%;
+.Founder .TopCrown .Quantum {
+   width: 43%;
+   margin: 5% 0% 5% 5%;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 1;
    background-size: cover;
 }
 
-.Founder .Colen {
-    position: relative;
+.Founder .TopCrown .Colen {
     line-height: 1.5;
-    right: 5%;
-    height: 40%;
     width: 40%;
-    margin: 0%;
-    margin-top: 10%;
+    padding: 5%;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-left: 0;
+    
 }
 
-.Founder .Colen h2{
+.Founder .TopCrown .Colen h2{
     font-family: 'Shentox','Rogan',sans-serif;
     color: white;
     margin-bottom: 10px;
     font-size: 2.7em;
 }
 
-.Founder .Colen p{
+.Founder .TopCrown .Colen p{
     font-family: 'Shentox','Rogan',sans-serif;
     color: white;
     text-align: justify;
@@ -782,7 +785,7 @@ i {
     margin-bottom: 20px;
 }
 
-.Founder .Colen a{
+.Founder .TopCrown .Colen a{
     padding-top: 5px;
     text-decoration: none;
     color: #fff;
@@ -791,42 +794,43 @@ i {
     letter-spacing: 1px;
 }
 
-#TopCrown {
-    width: 100%;
+.Founder .TopCrown {
     display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-#TopCrown div {
+.Founder .TopCrown .CCTV {
+    width: 43%;
+    margin: 5% 5% 5% -20%;
+    padding-left: 5%;
+    flex-direction: column;
+    flex-basis: 100%;
     flex: 1;
-}
-
-.Founder .CCTV {
-    flex: 1;
-    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/6J9B7iS6ldPCtCksN52IVW/b4be88f2e116baff8fe52f041977202c/ccptv-eve-online-streams-twitch.jpg?);
-    height: 40%;
-    width: 55%;
-    margin: 10%;
     background-size: cover;
 }
 
-.Founder .Twitcher {
-    flex: 2;
+.Founder .TopCrown .Twitcher {
     line-height: 1.5;
-    right: 5%;
-    height: 40%;
     width: 40%;
-    margin: 0%;
-    margin-top: 60%;
+    padding: 5%;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-top: 1%;
+    margin-right: 8%;
+    z-index: 10;
 }
 
-.Founder .Twitcher h2{
+.Founder .TopCrown .Twitcher h2{
     font-family: 'Shentox','Rogan',sans-serif;
     color: white;
     margin-bottom: 10px;
     font-size: 2.7em;
 }
 
-.Founder .Twitcher p{
+.Founder .TopCrown .Twitcher p{
     font-family: 'Shentox','Rogan',sans-serif;
     color: white;
     text-align: justify;
@@ -834,11 +838,35 @@ i {
     margin-bottom: 20px;
 }
 
-.Founder .Twitcher a{
+.Founder .TopCrown .Twitcher a{
     padding-top: 5px;
     text-decoration: none;
     color: #fff;
     font-size: 1em;
     font-family: 'Shentox Bold',sans-serif;
     letter-spacing: 1px;
+}
+
+.Kormega {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/3upazTiy9fWoNnPnMnjvZ6/8b10d2de56e16462c9f7f67d44a18f42/omega-clear.jpg?w=1500&q=75&fm=webp);
+}
+
+.Kormega h1 {
+    color: #fff;
+    font-size: 2.7em;
+    margin-bottom: 5%;
+    font-family: 'Rogan',sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    left: 29%;
+    top: 18%;
 }
