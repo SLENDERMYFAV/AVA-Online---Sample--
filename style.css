@@ -870,3 +870,15 @@ i {
     left: 29%;
     top: 18%;
 }
+
+.Kormega .Virtualdiv {
+    display: flex;
+}
+
+.Kormega .Virtualdiv p {
+    font-family: 'Shentox','Rogan',sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
