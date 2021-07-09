@@ -227,9 +227,10 @@ button {
     font-weight: lighter;
     border: none;
     margin: 10px;
+    padding: 25px 75px;
     letter-spacing: 2px;
     font-size: 20px;
-    padding: 25px 75px;
+    
     clip-path: polygon(
         0% 15%,
          6% 0, 
@@ -879,6 +880,25 @@ i {
     font-family: 'Shentox','Rogan',sans-serif;
     color: white;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.6em;
     margin-bottom: 20px;
+    margin-top: -100px;
+    padding: 10%;
+}
+
+.Kormega .Virtualdiv .Horseshoe .VideoPort {
+    margin-top: -20px;
+}
+
+#svg {
+    position: absolute;
+    left: 70%;
+    top:  63%;
+}
+
+#INFO {
+    font-size:  1.2em;
+    width: 170px;
+    padding: 20px 10px !important; 
+    margin-left: 10%;
 }
