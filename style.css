@@ -944,3 +944,40 @@ footer {
     background-color: #101010;
     width: 100%;
 }
+
+table {
+    width: 70%;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Shentox','Rogan',sans-serif;
+    font-weight: 100;
+    margin: 3%;
+}
+
+table th {
+    color: #979797;
+    padding: 10px;
+}
+
+table td {
+    color: #fff;
+    padding: 10px;
+}
+
+table td a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.Social {
+    display: flex;
+}
+
+.idm-share{
+    width: 32px;
+    height: 32px;
+    background: #8c8c8c;
+    position: relative;
+    border-radius: 100%;
+    transition: .2s ease-in-out;
+}
