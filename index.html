@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/lity.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/lity.min.js"></script>
+    <script src="js/vanilla-jsuparallax.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -114,12 +121,30 @@
     <section class="invid">
         <div class="MainShip">
             <div class="BigShip">
+                <div>
                 <p>
                     “AVA Online is peerless. Its importance stands in isolation because no other developer has even
                     attempted to match what it does, let alone tried to surpass it.”
                 </p>
                 <img src="https://images.ctfassets.net/7lhcm73ukv5p/4gH9l2Svoku0iua0qoY6aO/ec9e481bcf66b150e9cdca0f335535dc/pc-gamer-logo.png"
                     alt="">
+                </div>
+                <div>
+                    <p>
+                        “AVA Online is peerless. Its importance stands in isolation because no other developer has even
+                        attempted to match what it does, let alone tried to surpass it.”
+                    </p>
+                    <img src="https://images.ctfassets.net/7lhcm73ukv5p/4gH9l2Svoku0iua0qoY6aO/ec9e481bcf66b150e9cdca0f335535dc/pc-gamer-logo.png"
+                        alt="">
+                </div>
+                <div>
+                    <p>
+                        “AVA Online is peerless. Its importance stands in isolation because no other developer has even
+                        attempted to match what it does, let alone tried to surpass it.”
+                    </p>
+                    <img src="https://images.ctfassets.net/7lhcm73ukv5p/4gH9l2Svoku0iua0qoY6aO/ec9e481bcf66b150e9cdca0f335535dc/pc-gamer-logo.png"
+                        alt="">
+                </div>
             </div>
         </div>
         <div class="AVAVIDEO">
@@ -304,7 +329,9 @@
             </h1>
             <div class="Virtualdiv">
                 <div class="Horseshoe">
+                    <div class="Korblox" data-jsuplxdir="bottom" data-jsuplxperspective="150" >
                     <img src="https://web.ccpgamescdn.com/aws/eveonline/images/www/omega-ship-1.png" alt="">
+                   </div>  
                     <p>
                         Begin your life as a Capsuleer in New Eden, where your destiny amidst hundreds of thousands of
                         others awaits you. Become one with your ship and embark on a story of industry, exploration and
@@ -315,7 +342,9 @@
                     </button>
                 </div>
                 <div class="Horseshoe">
+                    <div class="Overseer" data-jsuplxdir="" data-jsuplxperspective="150">
                     <img src="https://web.ccpgamescdn.com/aws/eveonline/images/www/omega-ship-2.png" alt="">
+                   </div>  
                     <div class="VideoPort">
                         <img width="90%"
                             src="https://images.ctfassets.net/7lhcm73ukv5p/7jON5qF4nCJgTKOZ43D5Dj/2bda4edf50369dac013bbf1bff5be6fe/Omega-video-thumbnail.jpg?fm=webp&w=1300"
@@ -449,6 +478,20 @@
         window.addEventListener("scroll", function () {
             var header = document.querySelector("header")
             header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+    <script>
+        new vanillaJsuParallax({
+            items: document.querySelectorAll('.Korblox, .Overseer')
+        })
+    </script>
+    <script>
+        ScrollReveal().reveal('.card')
+    </script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".BigShip").owlCarousel();
         })
     </script>
 </body>
