@@ -65,6 +65,9 @@ body {
 
 video {
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 header{
@@ -82,13 +85,10 @@ header{
 
 .title {
     z-index: 1;
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 25%;
-    left: 25%;
     font-size: 36px;
     font-family: 'Shentox','Rogan',sans-serif;
-    font-weight: 100;
     color: white;
     font-weight: 500;
 }
@@ -157,11 +157,45 @@ header ul li a {
     transition: 0.6s;
 }
 
+header .nav-button {
+    display: none;
+}
+
+header .small-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px){
+    header {
+        flex-direction: column;
+        background-color: #13151a;
+    }
+    header ul {
+        flex-direction: column;
+        display:  none;
+    }
+
+    header .nav-button {
+        display: block;
+    }
+
+    header .small-menu {
+        width: 100%;
+    }
+}
+
 .hero {
     position: relative;
     width: 100%;
     height: 110vh;
     background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .description {
@@ -543,6 +577,7 @@ svg {
     z-index: 80;
     flex: 50%;
     position: absolute;
+    transition: transform .8s ease-in-out;
 }
 
 .MultiEden img:hover{
@@ -593,9 +628,9 @@ svg {
 .AUEden img{
     width: 43%;
     top: 18%;
-    right: -1%;
     z-index: 80;
     position: absolute;
+    transition: transform .8s ease-in-out;
 }
 
 .AUEden img:hover{

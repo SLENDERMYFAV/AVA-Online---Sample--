@@ -21,8 +21,13 @@
 
 <body>
     <header>
-        <img src="./images/TitleLogo.png" alt="" class="logo">
-        <ul>
+        <div class="small-menu">
+            <button class="nav-button" onclick="show()">
+               
+            </button>
+            <img src="./images/TitleLogo.png" alt="" class="logo">
+        </div>
+        <ul class="nav" id="RED">
             <li><span></span><a href="#">NEWS</a></li>
             <li><span></span><a href="#">RECRUIT A FRIEND</a></li>
             <li><span></span><a href="#">BEGINNER GUIDE</a></li>
@@ -354,7 +359,9 @@
                             viewBox="0 0 128 128" class="PlayButton_playButton__3zjGt featureVideo_icon__2AZ9E"
                             role="button">
                             <path fill="#DF1A23"
-                                d="M63 .577a2 2 0 0 1 2 0l53.426 30.846c.618.357 1 1.017 1 1.732v61.69c0 .715-.382 1.375-1 1.732L65 127.423a2.001 2.001 0 0 1-2 0L9.574 96.577a2 2 0 0 1-1-1.732v-61.69a2 2 0 0 1 1-1.732L63 .577z"
+                                d="M6
+                                78
+3 .577a2 2 0 0 1 2 0l53.426 30.846c.618.357 1 1.017 1 1.732v61.69c0 .715-.382 1.375-1 1.732L65 127.423a2.001 2.001 0 0 1-2 0L9.574 96.577a2 2 0 0 1-1-1.732v-61.69a2 2 0 0 1 1-1.732L63 .577z"
                                 filter="url(#filter0_i)"></path>
                             <path fill="#fff"
                                 d="M55.534 81.031A1 1 0 0 1 54 80.186V47.814a1 1 0 0 1 1.534-.845l25.627 16.185a1 1 0 0 1 0 1.691L55.534 81.031z">
@@ -493,6 +500,17 @@
         $(document).ready(function(){
             $(".BigShip").owlCarousel();
         })
+    </script>
+    <script>
+        function show() {
+            var nav = document.getElementById("RED")
+            if(nav.style.display === "none"){
+                nav.style.display = "block"
+            }
+            else{
+                nav.style.display = "none"
+            }
+        }
     </script>
 </body>
 
