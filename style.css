@@ -130,6 +130,12 @@ header ul li {
     100% { left: 0; }
 }
 
+#RED {
+    display: block;
+    display: flex;
+    flex-direction: row;
+}
+
 header ul li span{
     width: 100%;
     position: absolute;
@@ -157,8 +163,75 @@ header ul li a {
     transition: 0.6s;
 }
 
+.Logger {
+    display: none;
+}
+
+.Logger a {
+    position: relative;
+    padding-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}
+
+.Boxer {
+    display: flex;
+}
+
+.Logger2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Logger2 a {
+    position: relative;
+    padding-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}
+
+.IpLogger {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 5px;
+}
+
+.IpLogger a {
+    position: relative;
+    padding-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Shentox Bold',sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500px;
+}
+
+.IpLogger svg {
+    color: teal;
+}
+
 header .nav-button {
     display: none;
+    background: none !important;
+    padding: 0 !important;
 }
 
 header .small-menu {
@@ -168,10 +241,14 @@ header .small-menu {
     align-items: center;
 }
 
-@media screen and (max-width: 760px){
+#burgerking {
+    font-size: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 900px){
     header {
         flex-direction: column;
-        background-color: #13151a;
     }
     header ul {
         flex-direction: column;
@@ -182,8 +259,30 @@ header .small-menu {
         display: block;
     }
 
+    header .Logger {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    header .Logger2 {
+        display: none;
+    }
+
+    header .IpLogger {
+        display: none;
+    }
+
     header .small-menu {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #RED {
+        display: none !important;
     }
 }
 
@@ -442,12 +541,6 @@ button i {
 .VideoPort:hover {
     opacity: 100%;
     transition: 0.2s ease-in-out;
-}
-
-svg {
-    position: absolute;
-    left: 45%;
-    margin-top: 15%;
 }
 
 .VideoPort:hover > svg {
