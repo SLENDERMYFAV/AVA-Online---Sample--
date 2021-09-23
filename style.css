@@ -93,6 +93,14 @@ header{
     font-weight: 500;
 }
 
+.title .Button9000 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.title .Button9000 button {
+    flex-grow: 4;
+}
 
 header.sticky {
     padding: 10px 50px;
@@ -156,7 +164,7 @@ header ul li a {
     padding-top: 5px;
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Shentox Bold',sans-serif;
     letter-spacing: 1px;
     font-weight: 500px;
@@ -173,7 +181,7 @@ header ul li a {
     margin-left: 5px;
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Shentox Bold',sans-serif;
     letter-spacing: 1px;
     font-weight: 500px;
@@ -181,6 +189,8 @@ header ul li a {
 
 .Boxer {
     display: flex;
+    flex-grow: 4;
+    justify-content: flex-end;
 }
 
 .Logger2 {
@@ -189,6 +199,7 @@ header ul li a {
     align-content: center;
     justify-content: center;
     justify-items: center;
+    margin: 15px;
 }
 
 .Logger2 a {
@@ -197,7 +208,7 @@ header ul li a {
     margin-left: 5px;
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Shentox Bold',sans-serif;
     letter-spacing: 1px;
     font-weight: 500px;
@@ -209,7 +220,7 @@ header ul li a {
     align-content: center;
     justify-content: center;
     justify-items: center;
-    margin-left: 5px;
+    margin: 15px;
 }
 
 .IpLogger a {
@@ -218,7 +229,7 @@ header ul li a {
     margin-left: 5px;
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'Shentox Bold',sans-serif;
     letter-spacing: 1px;
     font-weight: 500px;
@@ -298,6 +309,7 @@ header .small-menu {
 }
 
 .description {
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -392,7 +404,7 @@ button i {
 }
 
 .description .inn {
-    width: 65%;
+    flex: 65%;
     padding-left: 5%;
 }
 
@@ -435,16 +447,13 @@ button i {
     font-weight: 150;
 }
 
-.description.inn {
-    width: 65%;
-    padding-left: 5%;
-}
-
 .description .onn{
-    width: 31%;
+    flex: 31%;
+    align-items: stretch;
     padding: 5%;
     display: flex;
     justify-content: space-between;
+    align-content: stretch;
     display: grid;
     grid-gap: 35px;
     grid-template-columns: auto auto;
@@ -454,8 +463,6 @@ button i {
     background-color: rgb(4, 39, 4);
     padding: 10px;
     margin-bottom: -40px;
-    width: 120px;
-    height: 200px;
     margin-top: 60px;
     opacity: 72%;
     text-align: center;
