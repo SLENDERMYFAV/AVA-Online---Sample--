@@ -286,6 +286,18 @@ header .small-menu {
         display: none;
     }
 
+    .description .onn {
+        flex: 100% !important;
+    }
+
+    .description .onn .card {
+        flex: 45% !important;
+    }
+
+    .description .inn {
+        flex: 100% !important;
+    }
+
     header .small-menu {
         width: 100%;
     }
@@ -453,15 +465,18 @@ button i {
     padding: 5%;
     display: flex;
     justify-content: space-between;
-    align-content: stretch;
-    display: grid;
-    grid-gap: 35px;
-    grid-template-columns: auto auto;
+    flex-wrap: wrap;
 }
 
 .description .onn .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(4, 39, 4);
     padding: 10px;
+    margin: 5px;
+    flex: 40%;
     margin-bottom: -40px;
     margin-top: 60px;
     opacity: 72%;
@@ -494,7 +509,6 @@ button i {
 .description .onn .card img {
     filter: brightness(0) invert(1);
     display: block;
-    margin-left: 24px;
     margin-bottom: 45px;
     opacity: 100%;
 }
