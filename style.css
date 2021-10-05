@@ -301,6 +301,61 @@ header .small-menu {
     header .small-menu {
         width: 100%;
     }
+
+    #Mommaship {
+        flex-direction: column;
+    }
+
+    #Frigate {
+        flex: 100%;
+    }
+
+    .Eden {
+        flex-direction: column;
+    }
+
+    .AUEden {
+        flex: 100%;
+    }
+
+    .MultiEden {
+        flex: 100%;
+    }
+
+    .Founder .TopCrown {
+        flex-direction: column !important;
+    }
+
+    .Founder .TopCrown .Quantum{
+        flex: 100%;
+    }
+
+    .Founder .TopCrown .Colen {
+        flex: 100%;
+    }
+
+    .Founder .TopCrown .Twitcher {
+        flex: 100%;
+        order: 2;
+    }
+
+    .Founder .TopCrown .CCTV {
+        flex: 100%;
+        order: 1;
+    }
+
+    .Kormega .Virtualdiv .ShipsOfTheShips {
+        flex-direction: column;
+    }    
+
+    .Kormega .Virtualdiv .ShipsOfTheShips .ShipsDescription {
+        flex: 100%;
+    }
+    
+    .Kormega .Virtualdiv .ShipsOfTheShips .ShipsVideo {
+        flex: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -599,7 +654,7 @@ button i {
 
 #Frigate {
     background-color: rgba(2, 52, 54, 0.7);
-    width: 30%;
+    flex: 30%;
     margin: 10%;
     margin-left: -3%;
     padding: 1%;
@@ -678,7 +733,7 @@ button i {
     overflow-x: hidden;
     background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-new.jpg);
     background-position: center;
-    width: 50%;
+    flex: 50%;
     background-size: cover;
     margin: 10% 2% 4% 5%;
     padding: 3%;
@@ -687,10 +742,8 @@ button i {
 .MultiEden img{
     width: 65%;
     top: 18%;
-    left: -1%;
     z-index: 80;
-    flex: 50%;
-    position: absolute;
+    position: relative;
     transition: transform .8s ease-in-out;
 }
 
@@ -732,7 +785,7 @@ button i {
 .AUEden {
     overflow-x: hidden;
     background-image: url(https://web.ccpgamescdn.com/aws/eveonline/images/www/cta-returning.jpg);
-    width: 45%;
+    flex: 45%;
     background-size: cover;
     margin: 10% 5% 4% 2%;
     flex: 50%;
@@ -743,7 +796,7 @@ button i {
     width: 43%;
     top: 18%;
     z-index: 80;
-    position: absolute;
+    position: relative;
     transition: transform .8s ease-in-out;
 }
 
@@ -908,7 +961,7 @@ i {
 }
 
 .Founder .TopCrown .Quantum {
-   width: 43%;
+   flex: 43%;
    margin: 5% 0% 5% 5%;
    flex-direction: column;
    flex-basis: 100%;
@@ -918,7 +971,7 @@ i {
 
 .Founder .TopCrown .Colen {
     line-height: 1.5;
-    width: 40%;
+    flex: 40%;
     padding: 5%;
     flex-direction: column;
     flex-basis: 100%;
@@ -959,7 +1012,7 @@ i {
 }
 
 .Founder .TopCrown .CCTV {
-    width: 43%;
+    flex: 43%;
     margin: 5% 5% 5% -20%;
     padding-left: 5%;
     flex-direction: column;
@@ -970,7 +1023,7 @@ i {
 
 .Founder .TopCrown .Twitcher {
     line-height: 1.5;
-    width: 40%;
+    flex: 40%;
     padding: 5%;
     flex-direction: column;
     flex-basis: 100%;
@@ -1031,6 +1084,25 @@ i {
 .Kormega .Virtualdiv {
     display: flex;
     overflow-x: hidden;
+    flex-direction: column;
+}
+
+.Kormega .Virtualdiv .ShipsShips {
+    display: flex;
+    width: 100%;
+}
+
+.Kormega .Virtualdiv .ShipsOfTheShips {
+    display: flex;
+    width: 100%;
+}
+
+.Kormega .Virtualdiv .ShipsOfTheShips .ShipsDescription {
+    flex: 50%;
+}
+
+.Kormega .Virtualdiv .ShipsOfTheShips .ShipsVideo {
+    flex: 50%;
 }
 
 .Kormega .Virtualdiv p {
@@ -1055,8 +1127,8 @@ i {
 
 #svg {
     position: absolute;
-    left: 70%;
-    top:  63%;
+    left: 0;
+    top: 0;
 }
 
 #INFO {
