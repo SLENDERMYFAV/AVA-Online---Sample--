@@ -612,6 +612,14 @@ button i {
 .VideoPort {
     margin: 10%;
     opacity: 90%;
+    position: relative;
+}
+
+.VideoPort svg {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .VideoPort:hover {
@@ -619,8 +627,8 @@ button i {
     transition: 0.2s ease-in-out;
 }
 
-.VideoPort:hover > svg {
-    transform: scale(1.1);
+.VideoPort svg:hover {
+    transform: translate(-50%, -50%) scale(1.1);
     transition: 0.2s ease-in-out;
 }
 
@@ -649,7 +657,7 @@ button i {
 }
 
 #Warship {
-    width: 63%;
+    width: 100%;
 }
 
 #Frigate {
@@ -1070,14 +1078,20 @@ i {
     background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/3upazTiy9fWoNnPnMnjvZ6/8b10d2de56e16462c9f7f67d44a18f42/omega-clear.jpg?w=1500&q=75&fm=webp);
 }
 
-.Kormega h1 {
+.Kormega .KormegaTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Kormega .KormegaTitle h1{    
     color: #fff;
     font-size: 2.7em;
     margin-bottom: 5%;
     font-family: 'Rogan',sans-serif;
     letter-spacing: 1px;
     position: relative;
-    left: 29%;
     top: 18%;
 }
 
@@ -1164,28 +1178,38 @@ footer {
     height: 100vh;
     background-color: #1d1e20;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-table {
+footer .links {
     width: 70%;
     text-align: left;
     font-size: 15px;
     font-family: 'Shentox','Rogan',sans-serif;
     font-weight: 100;
     margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-table th {
+footer .links div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+footer .links h3 {
     color: #979797;
     padding: 10px;
 }
 
-table td {
+footer .links h4 {
     color: #fff;
     padding: 10px;
 }
 
-table td a {
+footer .links h4 a {
     text-decoration: none;
     color: #fff;
 }
@@ -1196,6 +1220,8 @@ table td a {
     align-items: center;
     padding: 60px;
     padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Social .Network h1 {
