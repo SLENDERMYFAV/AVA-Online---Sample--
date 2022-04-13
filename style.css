@@ -592,20 +592,22 @@ button i {
 .MainShip .BigShip p{
     color: white;
     font-size: 24px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 11% !important;
+    margin-right: 19%;
     text-align: center;
     position: relative;
-    top: 65%;
+    margin-top: 25%;
     font-family: 'Rogan',sans-serif;
     font-weight: 150;
 }
 
-.MainShip .BigShip img {
-    text-align: center;
+.MainShip .BigShip img{
+    display: block;
     position: relative;
-    top: 65%;
-    left: 44%
+    margin-left: 42%;
+    margin-right: 50%;
+    width: 135px !important;
+    height: 30px !important;
 }
 
 .AVAVIDEO {
