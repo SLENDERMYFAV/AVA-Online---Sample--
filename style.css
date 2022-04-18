@@ -1183,15 +1183,17 @@ i {
 }
 
 footer {
-    height: 100vh;
     background-color: #1d1e20;
-    width: 100%;
+    width: 100% !important;
     display: flex;
     flex-wrap: wrap;
+    /* height: 100em; */
+    /* width:100em; */
 }
 
 footer .links {
-    width: 70%;
+    /* width: 70%; */
+    width: 100%;
     text-align: left;
     font-size: 15px;
     font-family: 'Shentox','Rogan',sans-serif;
@@ -1204,7 +1206,7 @@ footer .links {
 footer .links div {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-left: 80px;
 }
 
 footer .links h3 {
@@ -1346,3 +1348,4 @@ footer .links h4 a {
     font-family: 'Shentox','Rogan',sans-serif;
     font-weight: 100;
   }
+
