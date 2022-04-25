@@ -591,6 +591,39 @@ button i {
     min-width: 100vw;
 }
 
+.DOTA {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DOTA label {
+   width: 15px;
+   height: 15px;
+   background: #fff;
+   margin: -0 10px;
+   border-radius: 50%;
+   opacity: 0.3;
+   cursor:pointer;
+   transition: 0.2 ease-in-out;
+}
+
+.DOTA label:hover {
+    opacity: 0.7;
+}
+
+#DOTA-1:checked ~ #DOTAN-1
+#DOTA-2:checked ~ #DOTAN-2
+#DOTA-3:checked ~ #DOTAN-3
+#DOTA-4:checked ~ #DOTAN-4
+#DOTA-5:checked ~ #DOTAN-5 
+#DOTA-6:checked ~ #DOTAN-6  {
+    opacity: 1;
+}
+
 .BigShip .Wrapper {
     display: flex;
     height: 100%;
@@ -689,7 +722,7 @@ button i {
         85% 0%,
         100% 0, 
         100% 92%, 
-        88% 100%, 
+        88% 100%,
         43% 100%, 
         40% 98%, 
         18% 98%, 
@@ -1352,8 +1385,11 @@ footer .links h4 a {
   .CopyRight h3 {
     text-align: left;
     font-size: 15px;
-    color: #fff;
+  }
+   
+
+  /* .DOTA color: #fff;
     font-family: 'Shentox','Rogan',sans-serif;
     font-weight: 100;
-  }
+  } */
 
